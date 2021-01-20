@@ -19,7 +19,7 @@ namespace Lesson1_4_Exchange
 		static void Main(string[] args)
 		{
 			Console.ForegroundColor = ConsoleColor.Yellow;
-			Console.WriteLine("Обмен с третьей переменной");
+			Console.WriteLine("Замена значений через третью переменную");
 
 			int a = 13;
 			int b = 44;
@@ -35,7 +35,7 @@ namespace Lesson1_4_Exchange
 			/*****/
 
 			Console.ForegroundColor = ConsoleColor.Cyan;
-			Console.WriteLine("Обмен без третьей переменной");
+			Console.WriteLine("Замена без третьей переменной");
 
 			int g = 13;
 			int h = 44;

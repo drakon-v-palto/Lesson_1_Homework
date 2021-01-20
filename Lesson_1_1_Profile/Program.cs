@@ -39,11 +39,11 @@ namespace Lesson1_1_Profile
 
 			// б
 			Console.ForegroundColor = ConsoleColor.Cyan;
-			Console.WriteLine("Ваши данные: {1} {0}\nВозраст: {2}\nРост: {3}\nВес: {4}\n", name, surname, age, height, weight);
+			Console.WriteLine("Имя: {0} {1}. Возраст: {2}. Рост: {3}. Вес: {4}\n", name, surname, age, height, weight);
 
-			// в
+			// в (с переносом, чтобы легче читалось)
 			Console.ForegroundColor = ConsoleColor.Yellow;
-			Console.WriteLine($"Ваши данные: {surname} {name}\nВозраст: {age}\nРост: {height}\nВес: {weight}");
+			Console.WriteLine($"Имя: {name} {surname}\nВозраст: {age}\nРост: {height}\nВес: {weight}");
 
 			Console.ReadKey();
 		}
