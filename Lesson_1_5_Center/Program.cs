@@ -19,7 +19,8 @@ namespace Lesson_1_5_Center
 	{
 		static void Main(string[] args)
 		{
-			// эксперимент с размером окна - при ширине больше 73 выходит ошибка
+			// эксперимент с размером окна
+			// при ширине больше 73 выходит ошибка
 			Console.SetWindowSize(Console.WindowWidth, 70);
 			Console.SetWindowSize(Console.WindowHeight, 30);
 
