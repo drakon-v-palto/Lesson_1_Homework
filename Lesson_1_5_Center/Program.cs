@@ -19,11 +19,19 @@ namespace Lesson_1_5_Center
 	{
 		static void Main(string[] args)
 		{
-			// эксперимент с размером окна
+			// эксперимент с размером окна - при ширине больше 73 выходит ошибка
 			Console.SetWindowSize(Console.WindowWidth, 70);
 			Console.SetWindowSize(Console.WindowHeight, 30);
 
-			var text = "Александр\nСтоляров\nСанкт-Петербург";
+			Console.WriteLine("Имя и фамилия");
+			String name = Console.ReadLine();
+
+			Console.WriteLine("Город проживания");
+			String city = Console.ReadLine();
+
+			Console.Clear();
+
+			var text = name + "\n" + city;
 
 			// массив строк
 			var lines = Regex.Split(text, "\n");

@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lesson1_1_Profile
+namespace Lesson_1_1_Profile
 {
 	class Program
 	{
@@ -35,7 +35,7 @@ namespace Lesson1_1_Profile
 
 			// а
 			Console.ForegroundColor = ConsoleColor.Red;
-			Console.WriteLine(name + ", " + surname + ", " + age + ", " + height + ", " + weight + "\n");
+			Console.WriteLine(name + " " + surname + ", " + age + ", " + height + ", " + weight + "\n");
 
 			// б
 			Console.ForegroundColor = ConsoleColor.Cyan;

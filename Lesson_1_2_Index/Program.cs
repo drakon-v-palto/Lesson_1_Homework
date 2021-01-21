@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lesson1_2_Index
+namespace Lesson_1_2_Index
 {
 	class Program
 	{

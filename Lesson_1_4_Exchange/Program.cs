@@ -12,25 +12,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lesson1_4_Exchange
+namespace Lesson_1_4_Exchange
 {
 	class Program
 	{
 		static void Main(string[] args)
 		{
 			Console.ForegroundColor = ConsoleColor.Yellow;
-			Console.WriteLine("Замена значений через третью переменную");
+			Console.WriteLine("Замена через третью переменную");
 
 			int a = 13;
 			int b = 44;
-			Console.WriteLine("Первое значение " + a + "\nВторое значение " + b + "\n");
+			//Console.WriteLine("Первое значение " + a + "\nВторое значение " + b + "\n");
 
 			int с = a;
 			a = b;
 			b = с;
 			Console.WriteLine("Первое значение " + a + "\nВторое значение " + b);
 
-			Console.ReadLine();
+			Console.WriteLine();
 
 			/*****/
 
