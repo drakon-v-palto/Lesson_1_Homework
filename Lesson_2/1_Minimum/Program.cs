@@ -29,9 +29,9 @@ namespace Lesson_2_1_Minimum
 
 			var min = a;
 
-			if (a < b && a < c) min = a;
-			else if (b < c && b < a) min = b;
-			else if (c < a && c < b) min = c;
+			if (a <= b && a <= c) min = a;
+			else if (b <= c && b <= a) min = b;
+			else min = c;
 
 			Console.WriteLine($"Минимальное число {min}");
 			Console.ReadKey();
