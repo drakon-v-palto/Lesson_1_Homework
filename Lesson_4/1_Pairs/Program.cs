@@ -16,11 +16,11 @@ namespace Lesson_4_3_Pass
 {
 	class Program
 	{
-		static int GetPairs(int[] array, int length)
+		static int GetPairs(int[] array)
 		{
 			int pairs = 0;
 			// length - 1, чтобы индекс находился в пределах массива
-			for (int i = 0; i < length - 1; i++)
+			for (int i = 0; i < array.Length - 1; i++)
 				if (array[i] % 3 == 0 || array[i + 1] % 3 == 0)
 					pairs++;
 			return pairs;
@@ -40,7 +40,7 @@ namespace Lesson_4_3_Pass
 				newArray[i] = random.Next(-10000, 10000);
 				Console.Write(newArray[i] + ", ");
 			}
-			result = GetPairs(newArray, arrayLength);
+			result = GetPairs(newArray);
 
 			Console.WriteLine($"\n\nКоличество пар: {result}");
 

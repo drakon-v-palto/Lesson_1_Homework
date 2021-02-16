@@ -22,12 +22,13 @@ namespace Lesson_4_3_Pass
 			public string login;
 			public string password;
 
-			public void LoadFile(string file)
+			public void LoadFile()
 			{
+				string file = "";
 				if (file is null)
 					throw new ArgumentNullException(nameof(file));
 
-				file = "..\\..\\" + file;  // если убрать file, то ищет по пути \bin\Debug\pass.txt
+				file = "..\\..\\pass.txt";  // если убрать file, то ищет по пути \bin\Debug\pass.txt
 				StreamReader stream = new StreamReader(file);
 				login = stream.ReadLine();
 				password = stream.ReadLine();
@@ -50,18 +51,16 @@ namespace Lesson_4_3_Pass
 				return false;
 		}
 
-		static void Main(string[] args)
+		static void Main()
 		{
-			string[] fileName = { "pass.txt" };
-
 			Account pass;
 			pass.login = "";
 			pass.password = "";
 
-			int count = 0;
+			int count = 1;
 			do
 			{
-				pass.LoadFile(fileName[count]);
+				pass.LoadFile();
 
 				if (Check(pass))
 				{
@@ -72,8 +71,8 @@ namespace Lesson_4_3_Pass
 				//else if (checkLogin == login && checkPassword != password) Console.WriteLine("Неправильный пароль");
 				else Console.WriteLine("Неправильный логин или пароль");
 
-				count++;
-			} while (count < 3);
+				count--;
+			} while (count > 0);
 
 			Console.ReadKey();
 		}
